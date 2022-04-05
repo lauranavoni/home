@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Josefin+Sans&family=Poppins:wght@100;200;300&display=swap');
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #f0466b;
+}
+
+body {
+    margin: 0;
+    font-family: var(--sm-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+}
+
+header{
+    width: 100%;
+    position:fixed;
+}
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+/*Banner Section*/
+
+.banner{
+    position: relative;
+       width: 100%;
+       height: 100vh;
+       background: url(./img/Banner.jpg);
+       background-size: cover;
+       background-position: right center;
+       padding: 180px 0px;
+       clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+   }
+   .banner_desc h1.title {
+       color: #fff;
+   }
+   .banner_desc p.desc {
+       color: #fff;
+       margin: 30px 0px;
+   }
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+#row-fin{
+    background-color: #ffffff;
+}
+.row{
+    margin: 0;
+}
+
+.item{
+    float: left;
+    display: flex;
+}
+
+
+
+#row-contacto{
+    background-image: url('./img/Frame\ 349.png');
+    height: 620px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px !important;
+    padding-bottom: 140px !important;
+}
+/*================ subscribe part css================*/
+#subscribe{
+    height:300px;
+}
+#subscribe input{
+    margin-bottom: 5px;
+}
+#subscribe h6{
+    color: gray;
+
+}
+footer{
+    background-color: grey;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+footer a{
+    text-decoration: none;
+    color: purple;
+}
+
+.footer_social {
+    height: 130px;
+  }
+  
+  .footer_social ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .footer_social ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer_social ul li a {
+    color: #51545f;
+    transition: all 300ms ease;
+    padding: 10px;
+  }
+  
+  .footer_social ul li:last-child a {
+    padding-right: 0;
+  }
+  
+  .footer_social ul li a:hover {
+    color: #fe4c50;
+  }
